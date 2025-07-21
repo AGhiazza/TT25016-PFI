@@ -1,0 +1,170 @@
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    color: black;
+    background-color: rgb(134, 148, 161);
+    
+    header {
+        color: burlywood;
+        text-shadow: 
+                0 0 5px black,
+                0 0 10px black,
+                0 0 20px black,
+                0 0 40px black,
+                0 0 80px black;
+        text-align: center;
+        background-image: url(../assets/img/Banner.png);
+        background-size: contain;
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        .cartIcon{
+            display: flex;
+            justify-content: right;
+            size: 10%;
+            top: 0.25rem;
+            right: -40rem;
+            
+            a{
+                border: none;
+                padding: 1.25rem 0.75rem 0.5rem;
+                color: burlywood;
+                
+                .count {
+                    position:absolute;
+                    bottom: 0.5rem;
+                    left: 0;
+                    font-size: 12px;
+                    color: burlywood;
+                    border: 1px solid var(--backgroundHeader);
+                    border-radius: 50%;
+                }
+
+                .contadorCarrito{
+                    color: burlywood;
+                }
+
+            }
+
+            a:hover{
+                border-radius: 50%;
+                color: burlywood;
+                background-color: black;
+                transform: scale(1.2);
+
+                .contadorCarrito {
+                    color: burlywood;
+                    border: 1px solid var(--colorText);
+                }
+            }
+
+        }
+
+        nav{
+            ul{    
+                list-style-type: none;
+                display: flex;
+                flex-direction: row;
+                
+                justify-content: center;
+                text-justify: 1;
+                padding: 1.5rem;
+                font-size: 1.1rem;
+
+                a {
+                    border-radius: 0.99rem;
+                    padding: 0.5%;
+                    color: white;
+                    text-decoration: none;
+                    margin: 0;
+                }
+
+                a:hover {
+                    transform: scale(1.05);
+                }
+
+            }
+            
+
+        }
+
+    }
+
+    main {
+
+        h2 {
+            padding-top: 1%;
+            padding-left: 5%;
+            color: burlywood;
+            text-shadow: 
+                0 0 5px black,
+                0 0 10px black,
+                0 0 20px black,
+                0 0 40px black,
+                0 0 80px black;
+        }
+
+        .bestSelling {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin: 0 auto;
+            gap: 2rem ;
+            padding: 2rem;
+                        
+            .prod-card{
+                text-align: center;
+                border-radius: 0.75rem;
+                font-size: 1.2rem;
+                padding: 1rem 1rem;
+                background-color: bisque;
+                
+                
+                img {
+                    border-radius: 0.95rem;
+                }
+
+                button {
+                    text-decoration: none;
+                    border-radius: 1rem;
+                    background-color: rgb(68, 231, 68);
+                    border: none;
+                    padding: 3% 3%;
+                    font-size: 16px;
+                }
+            }
+
+            .prod-card:hover {
+                transform: scale(1.07);
+                border: 1.5px solid black;
+            }
+
+        }
+
+
+    }
+
+
+
+    footer {
+        color: burlywood;
+        text-shadow: 
+                0 0 5px black,
+                0 0 10px black,
+                0 0 20px black,
+                0 0 40px black,
+                0 0 80px black;
+        height: 2rem;
+        background-image: url(../assets/img/Banner.png);
+        background-size: cover;
+        
+    }
+}
+

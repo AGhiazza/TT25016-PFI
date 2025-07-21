@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    
+    <header>
+        
+        <h1>Bienvenido a Tienda Generica</h1>
+        <p>Aquí pondriamos una frase divertida! Si pudieramos pensar en una!</p>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./productos.html">Todos los productos</a></li>
+                <li><a href="./carrito.html">Carrito</a></li>
+                <li><a href="./faq.html">Preguntas Frecuentes</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <h2>¿Queres contactarnos?</h2>
+
+    <p>Completá el formulario y pronto nos comunicaremos con vos!</p>
+
+    <form action="https://formspree.io/f/xldbywqa" method="POST">
+        <label for="name">Nombre: </label>
+        <input type="text" name="name" id="" placeholder="Escribí tu nombre" required maxlength="20" minlength="3"> *
+        
+        <br>
+        
+        <label for="lastName">Apellido: </label>
+        <input type="text" name="lastName" id="" placeholder="Escribí tu apellido" maxlength="40"  minlength="2">
+    
+        <br>
+
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="" placeholder="Escribí tu email" required> *
+        
+        <br>
+
+        <label for="subject">Asunto</label>
+        <select name="subject" id="">
+            <option value="products">Productos</option>
+            <option value="shipping">Envios</option>
+            <option value="returns">Devoluciones</option>
+        </select>
+
+        <br>
+
+
+        <textarea name="message" id="" rows="7" cols="75" placeholder="Escribí tu mensaje acá"></textarea>
+        
+        <br>
+
+        <button type="submit">Enviar</button>
+
+
+
+    </form>
+
+
+
+
+
+
+
+</body>
+</html>

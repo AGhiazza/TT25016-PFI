@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-Entrega - Adrian Ghiazza</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        
+        <h1>Bienvenido a Tienda Generica</h1>
+        <p>Aquí pondriamos una frase divertida! Si pudieramos pensar en una!</p>
+
+        <div class="cartIcon">
+            <a href="./pages/carrito.html" onclick="irACarrito()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path fill="currentColor" d="M19.5 22a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3m-10 0a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3"/><path d="M5 4h17l-2 11H7zm0 0c-.167-.667-1-2-3-2m18 13H5.23c-1.784 0-2.73.781-2.73 2s.946 2 2.73 2H19.5"/></g></svg>
+                <div class="contadorCarrito"></div>
+            </a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./pages/productos.html">Todos los productos</a></li>
+                <li><a href="./pages/faq.html">Preguntas Frecuentes</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Lo mas vendido</h2>
+        <section class="bestSelling">
+            
+            <div class="prod-card">
+                <img src="https://picsum.photos/300/200?random=1" alt="Producto 1">
+                <div class="prod-info">
+                    <p class="prod-title">Remera</p>
+                    <p class="prod-price">$15000.00</p>
+                    <button class="add-to-cart" id="boton-carrito">Añadir al Carrito</button>
+                </div>
+            </div>
+
+            <div class="prod-card">
+                <img src="https://picsum.photos/300/200?random=2" alt="Producto 2">
+                <div class="prod-info">
+                    <p class="prod-title">Pantalones</p>
+                    <p class="prod-price">$30000.00</p>
+                    <button class="add-to-cart">Añadir al Carrito</button>
+                </div>
+            </div>
+
+            <div class="prod-card">
+                <img src="https://picsum.photos/300/200?random=3" alt="Producto 3">
+                <div class="prod-info">
+                    <p class="prod-title">Cinturon</p>
+                    <p class="prod-price">$50000.00</p>
+                    <button class="add-to-cart">Añadir al Carrito</button>
+                </div>
+            </div>
+
+            <div class="prod-card">
+                <img src="https://picsum.photos/300/200?random=4" alt="Producto 4">
+                <div class="prod-info">
+                    <p class="prod-title">Camisa</p>
+                    <p class="prod-price">$45000.00</p>
+                    <button class="add-to-cart">Añadir al Carrito</button>
+                </div>
+            </div>
+
+            <div class="prod-card">
+                <img src="https://picsum.photos/300/200?random=5" alt="Producto 5">
+                <div class="prod-info">
+                    <p class="prod-title">Medias</p>
+                    <p class="prod-price">$10000.00</p>
+                    <button class="add-to-cart">Añadir al Carrito</button>
+                </div>
+            </div>
+
+            <div class="prod-card">
+                <img src="https://picsum.photos/300/200?random=6" alt="Producto 6">
+                <div class="prod-info">
+                    <p class="prod-title">Zapatillas</p>
+                    <p class="prod-price">$60000.00</p>
+                    <button class="add-to-cart">Añadir al Carrito</button>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="reviews">
+
+        </section>
+
+
+    </main>
+    
+
+    <footer>
+        <p>@Adrian Ghiazza. Todos los derechos reservados.</p>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>
+
